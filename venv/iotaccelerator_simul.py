@@ -16,7 +16,7 @@ payload ="{\"bu\":\"default-unit\",\"e\":[{\"n\":\"testDev/3303/0/5700\",\"u\":\
 #A CHAVE DE AUTORIZAÇÃO DEVE SER RECUPERADA DO TICKET DO GATEWAY ONDE O DEVICE ESTÁ REGISTRADO
 #ESSA CHAVE ESTÁ DENTRO DO CAMPO "OUTBOX ACCESS TICKET"
 dataCollectorId = "e7ea53a2-3bc5-4bac-9d89-497313e6c2c5"
-auth = "SharedAccessSignature sr=https%3a%2f%2fiotabusinesslab.servicebus.windows.net%2fdatacollectoroutbox%2fpublishers%2fe7ea53a2-3bc5-4bac-9d89-497313e6c2c5%2fmessages&sig=fwIoUJdEffKJRONb2mGUOTLaq3cF2HnWAOCf0%2fX8%2f%2fM%3d&se=4681981352&skn=SendAccessPolicy"
+auth = ""
 
 headers = {
     'DataCollectorId': dataCollectorId,
@@ -36,7 +36,7 @@ headers2 = {
 end = False
 
 #ENDEREÇO QUE É FEITO OS POSTS NO DDM, ALTERA-SE APENAS O DATACOLLECTORID PARA REFERENCIAR OUTROS DEVICES
-url = "https://iotabusinesslab.servicebus.windows.net/datacollectoroutbox/publishers/"+dataCollectorId+"/messages"
+url = ""
 value = 0
 
 #VARIÁVEL DE CONTROLE DE FLUXO
